@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TahminActivity">
+
+    <TextView
+        android:id="@+id/textViewKalanHak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Kalan Hak: 5"
+        android:textColor="#DA0000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTahminGir"
+        android:layout_width="310dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="236dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Tahmin Giriniz..."
+        android:inputType="number|textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKalanHak" />
+
+    <Button
+        android:id="@+id/buttonTahminEt"
+        android:layout_width="252dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="104dp"
+        android:text="Tahmin Et"
+        android:textSize="18sp"
+        app:backgroundTint="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTahminGir" />
+
+    <TextView
+        android:id="@+id/textViewYardim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:textColor="#3638A1"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKalanHak" />
+</androidx.constraintlayout.widget.ConstraintLayout>
